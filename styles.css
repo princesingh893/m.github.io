@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Reset & Base Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; }
+/* Header */
+.header { background: #1976d2; padding: 0 1rem; position: fixed; width:100%; z-index:100;
+    display:flex; align-items:center; justify-content: space-between; height:60px; }
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+.msy-logo { width:50px; height:50px;background-color: #fff;border-radius:50%;}
+.nav-list { display:flex; list-style:none; gap:1rem; }
+.nav-item { color:#fff; font-weight:500; font-size:0.9rem; }
+.nav-item i{
+    font-size: 12px;
+    padding-left: 5px;
+}
+/* Hero Section */
+.main { padding-top:60px; }
+.hero-section { background:url('https://msydivineschool.in/home-bg1200-08b7edf.avif') center/cover no-repeat;
+  height:300px; display:flex; justify-content:flex-end; align-items:center;
+  background-blend-mode:overlay; background-color:rgba(0,0,0,0.5); }
+.hero-text { color:#fff; padding:1rem; text-align:right; }
+/* Responsive text sizes */n    .hero-text h2 { font-size:2.2rem; }
+.hero-text h4 { font-size:1.5rem; margin:0.5rem 0; }
+.hero-text p { font-size:1rem; margin-bottom:0.5rem; }
+.hero-text button { background:#1976d2; color:#fff; padding:0.5rem 1rem; border:none; border-radius:4px; }
+/* School Section */
+/* Grid Sections */
+.school-section { display:grid; gap:2rem; padding:2rem; }
+/* one column by default */
+.school-section { grid-template-columns:1fr; }
+.school-img, .school-img2 { overflow:hidden; }
+.school-text h4 { font-size:1.8rem; margin-bottom:0.5rem; }
+.school-text p { margin-bottom:1rem; line-height:1.5; }
+.school-text button { background:#9c27b0; color:#fff; padding:0.5rem 1rem; border:none; border-radius:4px; }
+
+/* Our Family Section */
+.our-family{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.our-family .family-content { background:#1976d2; color:#fff; display:flex; flex-direction:column;
+    align-items:center; text-align:center; padding:2rem; gap:1rem; }
+.family-content div h4{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.family-content div p{
+    font-size: 1rem;
+    font-weight: 402;
+    line-height: 1.5;
+}
+.family-content button{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 460;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+}
+.school-img2{
+    height: 370px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+.school-img2 img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.parallax {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax { background-attachment:fixed; background-position:center; background-repeat:no-repeat; background-size:cover; padding:4rem 1rem; }
+    .section1 { background-image:url('https://msydivineschool.in/testimonial-bg1250-5067cfe.avif'); background-blend-mode:overlay; background-color:rgba(0,0,0,0.6); }
+    .parallax h1 { color:#fff; font-size:2.5rem; text-align:center; margin-bottom:2rem; }
+    .slider-container { position:relative; overflow:hidden; }
+    .slider { display:flex; transition:transform 0.5s ease; }
+    .slide { min-width:100%; display:flex; align-items:center; gap:1rem; }
+    .slide-content blockquote { background:#181717; color:#fff; padding:1rem; border-radius:8px; }
+    .btn { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.5);
+        color:#fff; padding:0.5rem; border:none; font-size:1.5rem; }
+      .prev { left:1rem; }
+      .next { right:1rem; }
+      .navigation-dots { position:absolute; bottom:1rem; left:50%; transform:translateX(-50%); display:flex; gap:0.5rem; }
+      .dot { width:12px; height:12px; border-radius:50%; background:rgba(255,255,255,0.5); cursor:pointer; }
+      .dot.active { background:rgba(255,255,255,1); }
+/* bigSection */
+.bigContainer { text-align:center; padding:2rem 1rem; }
+.container { display:flex; flex-direction:row; gap:1rem; }
+.bigContainer h3{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.container .box{
+    height: 380px;
+    width: 500px;
+    margin: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #fff;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.2);
+    padding:0 10px;
+    border-radius: 4px;
+}
+.container .box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0px 10px rgba(0,0,0,0.20);
+    transition: 0.4s ease-in-out;
+}
+.container .box:hover button{
+    background-color: #fff;
+    border: 2px solid rgb(25, 118, 210);
+    color: rgb(25, 118, 210);
+    font-size: 1rem;
+}
+.container .box img{
+    height: 80px;
+    width: 80px;
+    margin: 20px 0;
+}
+.container .box h5{
+    font-size: 1.5rem;
+    font-weight: 501;
+    margin-bottom: 20px;
+}
+.container .box p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: #757171;
+}
+.container .box button{
+    background-color: rgb(25, 118, 210);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 460;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    user-select: none;
+    margin-bottom:2rem;
+}
+.container .box .collaboration{
+    width: 100px;
+    height: 80px ;
+}
+.container .box .centric{
+    width: 100px;
+    height: 80px;
+}
+.container .box .digitallearning{
+    width: 100px;
+    height: 80px;
+}
+.container .box .bus{
+    width: 70px;
+    height: 80px;
+}
+
+/* slider */
+.slide-content{
+    background-color: #000;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-content figcaption{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+.slide img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.navigation-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: rgba(255, 255, 255, 1);
+}
+/* footer */
+.footer_in1 { background:#1976d2; color:#fff; display:flex; flex-direction:column; align-items:center; padding:2rem 1rem; gap:2rem; }
+.footer_logo_container{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    padding: 30px;
+}
+.footer_logo_container i{
+    font-size: 1.7rem;
+    margin: 20px 5px;
+    cursor: pointer;
+}
+.footer_in3 i{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.footer_in1 ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.footer_in1 h6{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.footer_in3 h6{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.footer_in3 ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 33px;
+}
+.footer_in2 {
+    height: 350px;
+    width: 300px;
+    font-size: 1.2rem;
+    color: #fff;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 100px;
+    gap: 20px;
+}
+.footer_in2 li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer_in3 {
+    height: 300px;
+    font-size: 1.2rem;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 20px;
+    padding-left: 100px;
+}
+.footer_logo{
+    width: 110px;
+    height: 110px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 20px;
+}
+.top-hide{
+    font-size:2.3rem;
+    color:#fff;
+}
+/* media queries */  
+@media screen and (max-width:330px){
+    .hero-text h2{
+        padding-top:3rem;
+    }
+    .footer_in1 {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_logo_container {
+        width:100%;
+        align-items: center;
+        margin-right: 5rem;
+    }
+    .footer_in2{
+        width:100%;
+        margin-right:60%;
+    }
+    .footer_in3{
+        width:100%;
+        padding-left:0;
+        margin-right:7rem;
+    }
+    .footer_in2 h6, .footer_in3 h6{
+        text-align: start;
+    }
+    .footer_in2 ul li, .footer_in3 ul li{
+        text-align: start;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-list { position:absolute; top:60px; left:0; right:0; background:#1976d2;
+    flex-direction: column; display:none; text-align:center; }
+    .nav-list.active { display:flex; }
+    .nav-bar{
+        width:100%;
+    }
+    .hero-section{
+        justify-content: flex-start;
+        height:450px;
+        margin-bottom:2rem;
+    }
+    .hero-text{
+        text-align:start;
+    }
+    .hero-text h2{
+        font-size:2.1rem;
+    }
+    .hero-text h4{
+        font-size:1.6rem;
+        font-weight:450;
+    }
+    .hero-text p{
+        font-size:1.1rem;
+        margin-bottom:2rem;
+    }
+    .school-img img{
+        width:100%;
+        height:100%;
+    }
+    .school-img {
+        width:100%;
+        height:200px;
+        padding:0.5rem;
+        background-color: rgba(57, 57, 57, 0.87);
+    }
+    .school-section{
+        padding:1rem;
+    }
+    .school-section h4{
+        font-size:1.5rem;
+    }
+    .our-family .family-content{
+        padding:0.2rem;
+    }
+    .family-content div h4{
+        font-size:1.5rem;
+    }
+    .family-content div p{
+        margin-bottom:1.5rem;
+    }
+    .our-family .family-content{
+        height:270px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: start;
+    }
+    .school-img2{
+        padding:0;
+        height:auto;
+        width:100%;
+        background-image: url(https://msydivineschool.in/LM730-0f33472.avif);
+        background-size: cover;
+        background-position: center;
+    }
+    .school-img2 img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .bigContainer{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .bigContainer h3{
+        font-size:2rem;
+    }
+    .container{
+        width:100%;
+        flex-direction: column;
+    }
+    .container .box{
+        height:auto;
+        width:90%;
+        margin:0.5rem;
+    }
+    .container .box p{
+        margin-bottom:2rem;
+    }
+    .container .box button{
+        margin-bottom:2rem;
+    }
+    .footer_in1 {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_logo_container {
+        width:100%;
+        padding: 1rem;
+        align-items: center;
+        padding-right:6rem;
+    }
+    .footer_in2{
+        width:100%;
+    }
+    .footer_in2 h6, .footer_in3 h6{
+        text-align: start;
+    }
+    .footer_in2 ul li, .footer_in3 ul li{
+        text-align: start;
+    }
+}
+@media screen and (min-width:768px) {
+    .top-hide{
+        display: none;
+    }
+    .school-section { grid-template-columns:1fr 1fr; }
+}
+@media screen and (min-width:768px) {
+    .our-family .family-content { flex-direction:row; justify-content:space-between; text-align:left; }
+}
+@media screen and (min-width:768px) { .container { flex-direction:row; flex-wrap:wrap; justify-content:center; } }
+.box { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); flex:1; min-width:250px; }
+.box img { margin-bottom:1rem; }
+@media screen and (min-width:768px) { .footer_in1 { flex-direction:row; justify-content:space-between; } }
+.footer_logo { width:80px; height:80px; border-radius:50%; background:#fff; }
+.footer_logo_container, .footer_in2, .footer_in3 { text-align:center; }
+@media screen and (min-width:768px) {
+  .footer_logo_container, .footer_in2, .footer_in3 { text-align:left; }
+}

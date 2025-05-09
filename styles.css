@@ -372,6 +372,7 @@ button { cursor: pointer; }
         margin-bottom:2rem;
     }
     .hero-text{
+        padding-left: 1rem;
         text-align:start;
     }
     .hero-text h2{

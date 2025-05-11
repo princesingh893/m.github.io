@@ -191,18 +191,33 @@ button { cursor: pointer; }
 }
 .slide{
     display:flex;
+    height:auto;
     justify-content:center;
     padding: 0 4rem;
+    user-select: none;
 }
 .slide1{
-    height:200px;
-    width:200px;
-    background:red;
+    height:250px;
+    width:250px;
 }
 .slide2{
-    height:200px;
-    width:200px;
-    background-color: #1976d2;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height:300px;
+    width:550px;
+    margin-left: 3rem;
+}
+.textslide2{
+    width:100%;
+    height:85%;
+    padding:2rem;
+    color:#ffffff;
+    border-radius: 10px;
+    background:#141414;
+}
+blockquote p{
+    margin-bottom:1rem;
 }
 .btn {
     position: absolute;

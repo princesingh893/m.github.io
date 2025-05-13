@@ -342,7 +342,6 @@ blockquote p{
         padding-top:3rem;
     }
     .footer_in1 {
-        background-color: red;
         padding:0;
         display: flex;
         justify-content:space-between;
@@ -350,18 +349,15 @@ blockquote p{
     }
     .footer_logo_container {
         width:100%;
-        background-color: rgb(203, 38, 65);
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .footer_in2{
-        background-color: rgb(89, 181, 27);
         width:100%;
         margin-right:60%;
     }
     .footer_in3{
-        background-color: pink;
         width:100%;
         padding-left:0;
         margin-right:7rem;

@@ -56,4 +56,12 @@ slider.parentElement.addEventListener('mouseleave', () => {
 });
 const hamburger = document.querySelector('.hamburger');
 const navList = document.querySelector('.nav-list');
-hamburger.addEventListener('click', () => navList.classList.toggle('active'));        
+
+const button = document.querySelector('#reach');
+button.addEventListener('click', () => {
+    // Option A: open in a new tab/window
+    window.open('contact.html', '_blank');
+});
+
+
+

@@ -91,6 +91,17 @@ button { cursor: pointer; }
 .h1heading{
     font-size:2rem;
 }
+/* media queries */
+@media only screen and (max-width:768px) {
+   .hero2image{
+    background-color:#003a2c;
+    height:5vh;
+    width:100%;
+    .padding-less{
+        padding: 2rem;
+    }
+}
+
 
 
 

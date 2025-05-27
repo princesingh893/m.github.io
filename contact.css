@@ -154,33 +154,6 @@ button {
 .h1heading {
     font-size: 2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
 .footer_in1 {
     background: #1976d2;
@@ -332,11 +305,12 @@ button {
     }
 }
 
-@media screen and (max-width:440px) {
+@media screen and (max-width:500px) {
     .hero2image {
         background-color: #003a2c;
         height: 5vh;
         width: 100%;
+        border:none;
     }
     .footer_logo_container {
         margin-right: 0;
